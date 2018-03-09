@@ -4,6 +4,7 @@
     @$fokusPembalik = $_REQUEST['fokusPembalik'];
     @$panjangTeropongBumiTanpaAkomodasi= $fokusObjek + (4 * $fokusPembalik) + $fokusOkuler;
 ?>
+    
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -43,7 +44,7 @@
                     <td><input type="text" name="fokusOkuler" value="<?php echo $fokusOkuler; ?>"/>cm<br/></td>
                 </tr>
             </table>
-            <input type="button" id="btnHitung" value="Hitung" onclick="hitungLuas();" style="margin-bottom: 3%; background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer;"><br/><br/>
+             <input type="submit" name="submit" value="HITUNG" style="margin-bottom: 3%; background-color: #4CAF50; border: none; color: white; padding: 15px 32px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px; cursor: pointer;"><br/>
             <div class="font-simpulan">
             <?php
                 echo "Panjang Teropong Bumi untuk Mata Tanpa Akomodasi = ".$panjangTeropongBumiTanpaAkomodasi." cm<br/>";
